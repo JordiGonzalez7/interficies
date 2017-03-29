@@ -36,6 +36,8 @@
 		</style>
     </head>
     <body>
+	
+	
         <div class="app" >
             <div data-role="page" id="home">
                <header data-role="header" style="background-color:#66ccff;">
@@ -43,32 +45,64 @@
                </header>
 			   
 			   <div data-role="collapsible">
-					<h4>Peter Parker</h4>
-						<p><b>Telf:</b>123456789</p>
-						<p><b>Direccion:</b>Brooklyn</p>
-						<p><b>GPS:</b>+66º 32' 37,11' , +25º 50' 51,44</p>
+					<h4><b id="titulo1">Peter Parker</b></h4>
+						<p id="tel"><b>Telf:</b>123456789</p>
+						<p id="dir"><b >Direccion:</b>Brooklyn</p>
+						<p id ="gps"><b >GPS:</b>+66º 32' 37,11' , +25º 50' 51,44</p>
 						
 						<div class="btn"  align="center">
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Llamar</button>
-							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;" class="ui-btn-active"><a href="#mapa">Mas</a></button>
+							<button id="btnmapa" class="ui-btn ui-btn-inline" style="background-color: #66ccff;" class="ui-btn-active"><a href="#mapa" style="text-decoration:none;">Mas</a></button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
 						
+						<script>
+							document.getElementById("btnmapa").addEventListener("click", myFunction);
+
+							function myFunction() {
+													var titu = $("#titulo1").html();
+													var telf = $("#tel").html();
+													var dire = $("#dir").html();
+													var gp = $("#gps").html();
+													
+													$("#nom").html(titu);
+													$("#title1").html(titu);
+													$("#telfo").html(telf);
+													$("#direc").html(dire);
+													$("#gpss").html(gp);
+														}
+							</script>
+
 				</div>
 				
 				<div data-role="collapsible">
-					<h4>Jose Menos</h4>
-						<p><b>Telf:</b>987654321</p>
-						<p><b>Direccion:</b>Terrassa</p>
-						<p><b>GPS:</b>+34º 32' 37,11' , +54º 50' 51,44</p>
+					<h4><b id="tit1">Jose Menos</b></h4>
+						<p id="tel1"><b>Telf:</b>987654321</p>
+						<p id="dir1"><b>Direccion:</b>Terrassa</p>
+						<p id="gps1"><b>GPS:</b>+34º 32' 37,11' , +54º 50' 51,44</p>
 						
 						
 						<div align="center">
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Llamar</button>
-							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Mas</button>
+							<button id="btnmapa1" class="ui-btn ui-btn-inline" style="background-color: #66ccff;"><a href="#mapa" style="text-decoration:none;">Mas</a></button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
-						
+						<script>
+							document.getElementById("btnmapa1").addEventListener("click", myFunction1);
+
+							function myFunction1() {
+													var titu1 = $("#tit1").html();
+													var telf1= $("#tel1").html();
+													var dire1 = $("#dir1").html();
+													var gp1 = $("#gps1").html();
+													
+													$("#nom").html(titu1);
+													$("#title1").html(titu1);
+													$("#telfo").html(telf1);
+													$("#direc").html(dire1);
+													$("#gpss").html(gp1);
+														}
+							</script>
 				</div>
 				
 				
@@ -81,10 +115,25 @@
 						
 						<div align="center">
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Llamar</button>
-							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Mas</button>
+							<button  class="ui-btn ui-btn-inline" style="background-color: #66ccff;"><a href="#mapa">Mas</a></button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
-						
+						<script>
+							document.getElementById("btnmapa").addEventListener("click", myFunction);
+
+							function myFunction() {
+													var titu = $("#titulo1").html();
+													var telf = $("#tel").html();
+													var dire = $("#dir").html();
+													var gp = $("#gps").html();
+													
+													$("#nom").html(titu);
+													$("#title1").html(titu);
+													$("#telfo").html(telf);
+													$("#direc").html(dire);
+													$("#gpss").html(gp);
+														}
+							</script>
 				</div>
 				
 				
@@ -100,7 +149,22 @@
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Mas</button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
-						
+						<script>
+							document.getElementById("btnmapa").addEventListener("click", myFunction);
+
+							function myFunction() {
+													var titu = $("#titulo1").html();
+													var telf = $("#tel").html();
+													var dire = $("#dir").html();
+													var gp = $("#gps").html();
+													
+													$("#nom").html(titu);
+													$("#title1").html(titu);
+													$("#telfo").html(telf);
+													$("#direc").html(dire);
+													$("#gpss").html(gp);
+														}
+							</script>
 				</div>
 				
 				
@@ -116,7 +180,22 @@
 							<button class="ui-btn ui-btn-inline"style="background-color: #66ccff;">Mas</button>
 							<button class="ui-btn ui-btn-inline"style="background-color: #66ccff;">Edit</button>
 						</div>
-						
+						<script>
+							document.getElementById("btnmapa").addEventListener("click", myFunction);
+
+							function myFunction() {
+													var titu = $("#titulo1").html();
+													var telf = $("#tel").html();
+													var dire = $("#dir").html();
+													var gp = $("#gps").html();
+													
+													$("#nom").html(titu);
+													$("#title1").html(titu);
+													$("#telfo").html(telf);
+													$("#direc").html(dire);
+													$("#gpss").html(gp);
+														}
+							</script>
 				</div>
 				
 				
@@ -132,7 +211,22 @@
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Mas</button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
-						
+						<script>
+							document.getElementById("btnmapa").addEventListener("click", myFunction);
+
+							function myFunction() {
+													var titu = $("#titulo1").html();
+													var telf = $("#tel").html();
+													var dire = $("#dir").html();
+													var gp = $("#gps").html();
+													
+													$("#nom").html(titu);
+													$("#title1").html(titu);
+													$("#telfo").html(telf);
+													$("#direc").html(dire);
+													$("#gpss").html(gp);
+														}
+							</script>
 				</div>
 
 
@@ -153,28 +247,29 @@
 					
 					<div  data-role="page" id="mapa">
 									<header data-role="header" style="background-color:#66ccff;">
-										<h1>Mas-></h1>
+										<h1>Mas -> <b id="title1"><b/></h1>
 									</header>
 
-								<div data-role="content">
+							<div data-role="content" align="left">
 										
-                    <ul>
-                        <li><strong>Desarrollos Chiquiweb</strong></li>
-                        <li>Torrent del Batlle, 7</li>
-                        <li>Terrassa- 08225</li>
-                        <li><strong>E-correu: </strong>chiqui@chiquiweb.com</li>
-                        <li><strong>Telèfon: 93.780.75.17 </strong> </li>
-                    </ul>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1492.5023741376167!2d1.995474233860564!3d41.56914183609803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492a498d7ba21%3A0xc698f1cc3628032a!2sCarrer+de+Torrent+del+Batlle%2C+08225+Terrassa%2C+Barcelona!5e0!3m2!1ses!2ses!4v1488791571435" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <h3>Localització</h3>
+									<ul align="left">
+										<li><p id="nom"></p></li>
+										<li><p id="telfo"></p></li>
+										<li><p id="direc"></p></li>
+										<li><p id="gpss"></p></li>
+									</ul>
+								<div class="map">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1492.5023741376167!2d1.995474233860564!3d41.56914183609803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492a498d7ba21%3A0xc698f1cc3628032a!2sCarrer+de+Torrent+del+Batlle%2C+08225+Terrassa%2C+Barcelona!5e0!3m2!1ses!2ses!4v1488791571435" width="430" height="450" frameborder="1" style="border:0" allowfullscreen></iframe>
+								</div>
+								
+								
+										<a href="" data-role="button" data-inline="true"  style="background-color:#66ccff;">Abrir en maps</a>
+										<a href="index.html" data-role="button" data-inline="true" data-theme="b">Atras</a>
+								
                     
-               </div>
+							</div>
 
-               <footer data-role="footer">
-                   <h3>Copyright &copy; 2017</h3>
-               </footer>
+               
 		
 		
 					</div>
