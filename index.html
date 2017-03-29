@@ -16,22 +16,7 @@
 		<style>
 		
 		
-				.contenedor{
-					position:fixed;
-					width:50px;
-					bottom:3%;
-					right:3%;
-					
-				}
 				
-				#b{
-				
-				background-color: #66ccff;
-				border-radius: 50px 50px 50px 50px;
-				
-				
-				
-				}
 				
 		</style>
     </head>
@@ -46,18 +31,18 @@
 			   
 			   <div data-role="collapsible">
 					<h4><b id="titulo1">Peter Parker</b></h4>
-						<p id="tel"><b>Telf:</b>123456789</p>
-						<p id="dir"><b >Direccion:</b>Brooklyn</p>
-						<p id ="gps"><b >GPS:</b>+66º 32' 37,11' , +25º 50' 51,44</p>
+						<p id="tel"><b>Telf: </b>123456789</p>
+						<p id="dir"><b >Direccion: </b>Brooklyn</p>
+						<p id ="gps"><b >GPS: </b>+66º 32' 37,11' , +25º 50' 51,44</p>
 						
 						<div class="btn"  align="center">
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Llamar</button>
-							<button id="btnmapa" class="ui-btn ui-btn-inline" style="background-color: #66ccff;" class="ui-btn-active"><a href="#mapa" style="text-decoration:none;">Mas</a></button>
+							<button id="btnmapa" class="ui-btn ui-btn-inline" onclick="myFunction()" style="background-color: #66ccff;" class="ui-btn-active"><a href="#mapa" style="text-decoration:none;">Mas</a></button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
 						
 						<script>
-							document.getElementById("btnmapa").addEventListener("click", myFunction);
+							
 
 							function myFunction() {
 													var titu = $("#titulo1").html();
@@ -70,6 +55,12 @@
 													$("#telfo").html(telf);
 													$("#direc").html(dire);
 													$("#gpss").html(gp);
+													
+													
+													titu = "";
+													telf = "";
+													dire = "";
+													gp = "";
 														}
 							</script>
 
@@ -77,18 +68,18 @@
 				
 				<div data-role="collapsible">
 					<h4><b id="tit1">Jose Menos</b></h4>
-						<p id="tel1"><b>Telf:</b>987654321</p>
-						<p id="dir1"><b>Direccion:</b>Terrassa</p>
-						<p id="gps1"><b>GPS:</b>+34º 32' 37,11' , +54º 50' 51,44</p>
+						<p id="tel1"><b>Telf: </b>987654321</p>
+						<p id="dir1"><b>Direccion: </b>Terrassa</p>
+						<p id="gps1"><b>GPS: </b>+34º 32' 37,11' , +54º 50' 51,44</p>
 						
 						
 						<div align="center">
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Llamar</button>
-							<button id="btnmapa1" class="ui-btn ui-btn-inline" style="background-color: #66ccff;"><a href="#mapa" style="text-decoration:none;">Mas</a></button>
+							<button id="btnmapa1" class="ui-btn ui-btn-inline" onclick="myFunction1()" style="background-color: #66ccff;"><a href="#mapa" style="text-decoration:none;">Mas</a></button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
 						<script>
-							document.getElementById("btnmapa1").addEventListener("click", myFunction1);
+							
 
 							function myFunction1() {
 													var titu1 = $("#tit1").html();
@@ -101,6 +92,11 @@
 													$("#telfo").html(telf1);
 													$("#direc").html(dire1);
 													$("#gpss").html(gp1);
+													
+													titu = "";
+													telf = "";
+													dire = "";
+													gp = "";
 														}
 							</script>
 				</div>
@@ -118,22 +114,7 @@
 							<button  class="ui-btn ui-btn-inline" style="background-color: #66ccff;"><a href="#mapa">Mas</a></button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
-						<script>
-							document.getElementById("btnmapa").addEventListener("click", myFunction);
-
-							function myFunction() {
-													var titu = $("#titulo1").html();
-													var telf = $("#tel").html();
-													var dire = $("#dir").html();
-													var gp = $("#gps").html();
-													
-													$("#nom").html(titu);
-													$("#title1").html(titu);
-													$("#telfo").html(telf);
-													$("#direc").html(dire);
-													$("#gpss").html(gp);
-														}
-							</script>
+						
 				</div>
 				
 				
@@ -149,22 +130,7 @@
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Mas</button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
-						<script>
-							document.getElementById("btnmapa").addEventListener("click", myFunction);
-
-							function myFunction() {
-													var titu = $("#titulo1").html();
-													var telf = $("#tel").html();
-													var dire = $("#dir").html();
-													var gp = $("#gps").html();
-													
-													$("#nom").html(titu);
-													$("#title1").html(titu);
-													$("#telfo").html(telf);
-													$("#direc").html(dire);
-													$("#gpss").html(gp);
-														}
-							</script>
+						
 				</div>
 				
 				
@@ -180,22 +146,7 @@
 							<button class="ui-btn ui-btn-inline"style="background-color: #66ccff;">Mas</button>
 							<button class="ui-btn ui-btn-inline"style="background-color: #66ccff;">Edit</button>
 						</div>
-						<script>
-							document.getElementById("btnmapa").addEventListener("click", myFunction);
-
-							function myFunction() {
-													var titu = $("#titulo1").html();
-													var telf = $("#tel").html();
-													var dire = $("#dir").html();
-													var gp = $("#gps").html();
-													
-													$("#nom").html(titu);
-													$("#title1").html(titu);
-													$("#telfo").html(telf);
-													$("#direc").html(dire);
-													$("#gpss").html(gp);
-														}
-							</script>
+						
 				</div>
 				
 				
@@ -211,37 +162,22 @@
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Mas</button>
 							<button class="ui-btn ui-btn-inline" style="background-color: #66ccff;">Edit</button>
 						</div>
-						<script>
-							document.getElementById("btnmapa").addEventListener("click", myFunction);
-
-							function myFunction() {
-													var titu = $("#titulo1").html();
-													var telf = $("#tel").html();
-													var dire = $("#dir").html();
-													var gp = $("#gps").html();
-													
-													$("#nom").html(titu);
-													$("#title1").html(titu);
-													$("#telfo").html(telf);
-													$("#direc").html(dire);
-													$("#gpss").html(gp);
-														}
-							</script>
+						
 				</div>
 
 
               
-
-			  
-				
-		
-			</div>
-			
 					<div class="contenedor">
 			
 							<button id="b" class="ui-btn ui-btn-inline" >+</button>
 			
 					</div>
+			  
+				
+		
+			</div>
+			
+					
 					
 					
 					
